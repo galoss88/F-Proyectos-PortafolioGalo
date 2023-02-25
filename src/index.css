@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Sofia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+}
+@media (max-width: 716px) {
+  body {
+    overflow: hidden;
+  }
+}
+html {
+  font-size: 62.5%;
+  font-family: "Acme";
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
