@@ -1,19 +1,22 @@
+import linkedin from "../../public/assets/Images/linkedin.svg";
+import github from "../../public/assets/Images/github.svg";
+import gmail from "../../public/assets/Images/gmail.svg";
 const redes = [
   {
     nameRed: "Gmail",
-    logoURL: "/public/assets/Images/gmail.svg",
+    logoURL: gmail,
     direccion: "gallogarcianicolas@gmail.com",
     type: "email",
   },
   {
     nameRed: "NicolasGalloGarcia",
-    logoURL: "/assets/Images/linkedin.svg",
-    direccion: "https://www.linkedin.com/in/nicolas-gallo-garcia-359136236  ",
+    logoURL: linkedin,
+    direccion: "https://www.linkedin.com/in/nicolas-gallo-garcia-359136236",
     type: "linkedin",
   },
   {
     nameRed: "galoss88",
-    logoURL: "/public/assets/Images/github.svg",
+    logoURL: github,
     direccion: "https://github.com/galoss88",
     type: "github",
   },

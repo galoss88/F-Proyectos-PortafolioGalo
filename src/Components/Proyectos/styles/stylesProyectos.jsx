@@ -19,7 +19,7 @@ export const Container = styled.div`
   }
   @media (max-width: 416px) {
     
-    height: auto;
+    max-height: 100%;
 
     margin: 2em;
   }

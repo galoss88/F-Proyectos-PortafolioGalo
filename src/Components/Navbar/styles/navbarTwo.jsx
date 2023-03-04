@@ -9,6 +9,7 @@ export const Menu = styled.div`
   gap: 3rem;
   width: auto;
   height: auto;
+  justify-content: center;
   z-index: 1;
   @media (orientation: landscape) and (max-height: 415px) {
     top: 0;
@@ -18,30 +19,32 @@ export const Menu = styled.div`
 
     right: 0%;
     top: 0%;
-    width: 100vw;
+    width: 100%;
   }
   @media (max-width: 376px) {
     flex-direction: row;
-    width: 100vw;
+    width: 100%;
+    
   }
 `;
 export const WrapperItems = styled.div`
   display: flex;
   width: 100%;
   flex-direction: column;
+  
 
   gap: 3em;
   @media (max-width: 416px) {
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
   }
   @media (max-height: 740px) and(max-width:360px) {
     gap: 1em;
   }
   @media (max-width: 376px) {
     flex-direction: row;
-    width: 100%;
+    gap: 2.5em;
   }
   @media (orientation: landscape) and (max-height: 415px) {
     gap: 0;

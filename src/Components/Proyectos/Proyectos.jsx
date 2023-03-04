@@ -1,11 +1,11 @@
 import React from "react";
-
 import useCreateProject from "../../hooks/useCreateProject";
+
 
 const Proyectos = () => {
   const proyecto = [
     {
-      videoURL: "/public/assets/videoProyectos/PiHenry.mp4",
+      videoURL: "/assets/videoProyectos/PiHenry.mp4",
       titulo: "Proyecto Individual Henry",
       descripcion:
         "SPA creada como proyecto individual para bootcamp soy henry, principalmente usando Html,Css puro,React,Redux,NodeJS, express, sequelize, postgreSQl",
@@ -21,7 +21,7 @@ const Proyectos = () => {
       formatoVideo: "video/mp4",
     },
     {
-      videoURL: "/public/assets/videoProyectos/BuscadorImagenes.mp4",
+      videoURL: "/assets/videoProyectos/BuscadorImagenes.mp4",
       titulo: "Buscador Imagenes",
       descripcion:
         "SPA creada principalmente para repaso y aprendizaje de hooks de react. Utilizando principalmente Html, Css, React, Styled Components",
@@ -29,7 +29,7 @@ const Proyectos = () => {
       formatoVideo: "video/mp4",
     },
     {
-      videoURL: "/public/assets/videoProyectos/BuscadorBebidas.mp4",
+      videoURL: "/assets/videoProyectos/BuscadorBebidas.mp4",
       titulo: "Buscador de Bebidas",
       descripcion:
         "SPA creada principalmente para repaso y aprendizaje react. Utilizando principalmente Html, Css, React, Styled Components",
@@ -37,7 +37,7 @@ const Proyectos = () => {
       formatoVideo: "video/mp4",
     },
     {
-      videoURL: "/public/assets/videoProyectos/AppClima.mp4",
+      videoURL: "/assets/videoProyectos/AppClima.mp4",
       titulo: "Mira el clima de tu ciudad",
       descripcion:
         "SPA creada principalmente para repaso y aprendizaje react. Utilizando principalmente Html, Css, React, Styled Components",
@@ -45,7 +45,7 @@ const Proyectos = () => {
       formatoVideo: "video/mp4",
     },
     {
-      videoURL: "/public/assets/videoProyectos/AppNoticias.mp4",
+      videoURL: "/assets/videoProyectos/AppNoticias.mp4",
       titulo: "Observa las principales noticias de Argentina",
       descripcion:
         "SPA creada principalmente para repaso y aprendizaje react. Utilizando principalmente Html, Css, React, Styled Components",
@@ -53,7 +53,7 @@ const Proyectos = () => {
       formatoVideo: "video/mp4",
     },
     {
-      videoURL: "/public/assets/videoProyectos/FrasesBreakingBad.mp4",
+      videoURL: "/assets/videoProyectos/FrasesBreakingBad.mp4",
       titulo: "Descubri las frases celebres de Breaking Bad",
       descripcion:
         "SPA creada principalmente para repaso y aprendizaje react. Utilizando principalmente Html, Css, React, Styled Components",
@@ -61,7 +61,7 @@ const Proyectos = () => {
       formatoVideo: "video/mp4",
     },
     {
-      videoURL: "/public/assets/videoProyectos/AppPresupuesto.mp4",
+      videoURL: "/assets/videoProyectos/AppPresupuesto.mp4",
       titulo: "Arma tu presupuesto, controla tus gastos",
       descripcion:
         "SPA creada principalmente para repaso y aprendizaje react. Utilizando principalmente Html, Css, React, Styled Components",
@@ -69,7 +69,7 @@ const Proyectos = () => {
       formatoVideo: "video/mp4",
     },
     {
-      videoURL: "/public/assets/videoProyectos/AppTurnos.mp4",
+      videoURL: "/assets/videoProyectos/AppTurnos.mp4",
       titulo: "SPA, administracion de turnos veterinaria",
       descripcion:
         "SPA creada principalmente para repaso y aprendizaje react. Utilizando principalmente Html, Css, React, Styled Components",
@@ -85,7 +85,7 @@ const Proyectos = () => {
       deploy: "https://hostel-project.vercel.app",
     },
     {
-      videoURL: "/public/assets/videoProyectos/cotizadorseguro.mp4",
+      videoURL: "/assets/videoProyectos/cotizadorseguro.mp4",
       titulo: "Cotizador seguros auto",
       descripcion:
         "SPA creada como proyecto grupal junto a 6 compañeros. Utilizando principalmente Html, Css, React, Redux, Bootstrap, Styled Components, nodeJS, express, postgreSQL ",
