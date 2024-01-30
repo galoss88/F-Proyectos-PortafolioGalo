@@ -17,24 +17,24 @@ const useCreateProject = (proyectos) => {
           proyectos.map((proyecto, index) => (
             <Card key={index}>
               <Imagen
-                
                 src={proyecto.videoURL}
                 controls
                 muted
+                loading="lazy"
                 type={proyecto.formatoVideo}
               >
                 Video HTML5 no soportado
               </Imagen>
               <Titulo>{proyecto.titulo}</Titulo>
               <Descripcion>{proyecto.descripcion}</Descripcion>
-            
+
               <LinkDeploy
-                  onClick={() => window.open(proyecto.deploy, "_blank")}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  {proyecto.deploy}
-                </LinkDeploy>
+                onClick={() => window.open(proyecto.deploy, "_blank")}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {proyecto.deploy}
+              </LinkDeploy>
             </Card>
           ))}
       </WrapperCards>

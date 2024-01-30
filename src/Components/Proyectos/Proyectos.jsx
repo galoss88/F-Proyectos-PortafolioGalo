@@ -1,7 +1,6 @@
 import React from "react";
 import useCreateProject from "../../hooks/useCreateProject";
 
-
 const Proyectos = () => {
   const proyecto = [
     {
@@ -91,6 +90,14 @@ const Proyectos = () => {
         "SPA creada como proyecto grupal junto a 6 compañeros. Utilizando principalmente Html, Css, React, Redux, Bootstrap, Styled Components, nodeJS, express, postgreSQL ",
       formatoVideo: "video/mp4",
       deploy: "https://galocotizadorseguro.netlify.app",
+    },
+    {
+      videoURL: "",
+      titulo: "Festilandia Cotillon",
+      descripcion:
+        "E-commerce realizado con React,Redux, React-Bootstrap, Nodejs, Express, Sequelize. Con deploy en vps mediante nginx y aplicado CI/CD para despliegue automatico. (Por ahora solo esta en modo catalogo, proximamente el se habilitara para el cliente la compra de productos.) ",
+      formatoVideo: "video/mp4",
+      deploy: "https://festilandiacotillon.com",
     },
   ];
   const [Projects] = useCreateProject(proyecto);
