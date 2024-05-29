@@ -8,6 +8,7 @@ const redes = [
     direccion: "gallogarcianicolas@gmail.com",
     type: "email",
   },
+  
   {
     nameRed: "NicolasGalloGarcia",
     logoURL: linkedin,
