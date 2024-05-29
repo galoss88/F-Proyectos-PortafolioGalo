@@ -3,13 +3,22 @@ import useCreateProject from "../../hooks/useCreateProject";
 
 const Proyectos = () => {
   const proyecto = [
+    // {
+    //   videoURL: "/assets/videoProyectos/PiHenry.mp4",
+    //   titulo: "Proyecto Individual Henry",
+    //   descripcion:
+    //     "SPA creada como proyecto individual para bootcamp soy henry, principalmente usando Html,Css puro,React,Redux,NodeJS, express, sequelize, postgreSQl",
+    //   deploy: "https://pi-countries-roan.vercel.app/",
+    //   formatoVideo: "video/mp4",
+    // },
+
     {
-      videoURL: "/assets/videoProyectos/PiHenry.mp4",
-      titulo: "Proyecto Individual Henry",
+      // videoURL: "/assets/videoProyectos/PiHenry.mp4",
+      titulo: "App react native gestion formularios.",
       descripcion:
-        "SPA creada como proyecto individual para bootcamp soy henry, principalmente usando Html,Css puro,React,Redux,NodeJS, express, sequelize, postgreSQl",
-      deploy: "https://pi-countries-roan.vercel.app/",
-      formatoVideo: "video/mp4",
+        "Aplicacion mobile para gestionar creacion de formularios.",
+      deploy: "https://test-app-ifarming.netlify.app",
+      // formatoVideo: "video/mp4",
     },
     {
       videoURL: "/assets/videoProyectos/CotizadorCriptos.mp4",
@@ -77,7 +86,7 @@ const Proyectos = () => {
     },
     {
       videoURL: "https://vimeo.com/778854630",
-      titulo: "SPA Proyecto Grupal bootcamp Soy Henry",
+      titulo: "SPA Proyecto web hostel",
       descripcion:
         "SPA creada como proyecto grupal junto a 6 compañeros. Utilizando principalmente Html, Css, React, Redux, Bootstrap, Styled Components, nodeJS, express, postgreSQL ",
       formatoVideo: "video/mp4",
