@@ -1,6 +1,6 @@
 import React from "react";
 import useCreateButtonNav from "../../hooks/useCreateButtonNav";
-import { Menu, Tooltip, WrapperItems } from "./styles/navbarTwo";
+import { Menu, WrapperItems } from "./styles/navbarTwo";
 import "./styles/navbarTwo.css";
 export default function NavbarTwo() {
   const dataButtonMenu = [

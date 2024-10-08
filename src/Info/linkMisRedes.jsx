@@ -4,19 +4,19 @@ import gmail from "../../public/assets/Images/gmail.svg";
 const redes = [
   {
     nameRed: "Gmail",
-    logoURL: gmail,
+    logoURL: gmail || "",
     direccion: "gallogarcianicolas@gmail.com",
     type: "email",
-  },  
+  },
   {
     nameRed: "NicolasGalloGarcia",
-    logoURL: linkedin,
+    logoURL: linkedin || "",
     direccion: "https://www.linkedin.com/in/nicolas-gallo-garcia-359136236",
     type: "linkedin",
   },
   {
     nameRed: "galoss88",
-    logoURL: github,
+    logoURL: github || "",
     direccion: "https://github.com/galoss88",
     type: "github",
   },

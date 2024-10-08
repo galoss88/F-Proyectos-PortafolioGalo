@@ -14,7 +14,7 @@ const useCreateLinkContactame = (contacto) => {
       {contacto.map((red, index) => (
         <React.Fragment key={index}>
           <WrapperLogo>
-            <LogoDato src={red.logoURL} />
+            <LogoDato src={red.logoURL || ""} />
           </WrapperLogo>
           <WrapperDato>
             <Dato>
@@ -25,7 +25,9 @@ const useCreateLinkContactame = (contacto) => {
                   {red.direccion}
                 </LinkContacto>
               ) : (
-                <LinkContacto onClick={() => window.open(red.direccion,"_blank")}>
+                <LinkContacto
+                  onClick={() => window.open(red.direccion, "_blank")}
+                >
                   {red.nameRed}
                 </LinkContacto>
               )}
