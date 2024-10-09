@@ -20,7 +20,7 @@ const useCreateLinkContactame = (contacto) => {
             <Dato>
               {red.type === "email" ? (
                 <LinkContacto
-                  onClick={() => (window.location = `mailto:${red.direccion}`)}
+                  onClick={() => window.open(`mailto:${red.direccion}`)}
                 >
                   {red.direccion}
                 </LinkContacto>

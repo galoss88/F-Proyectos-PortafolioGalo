@@ -18,13 +18,11 @@ export const Container = styled.div`
     align-items: center;
   }
   @media (max-width: 416px) {
-    
     max-height: 100%;
 
     margin: 2em;
   }
   @media (max-width: 376px) {
-    
     height: auto;
 
     margin: 2em;
@@ -54,7 +52,6 @@ export const WrapperCards = styled.div`
   @media (max-width: 376px) {
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-row: auto;
-    
   }
 `;
 
@@ -88,7 +85,7 @@ export const Card = styled.div`
     justify-content: space-between;
   }
 `;
-export const Imagen = styled.video`
+export const Video = styled.video`
   :hover {
     transform: scale(1.3) translate(0%, 0%);
     box-shadow: 0 0rem 1rem 0.5rem white;
@@ -116,6 +113,59 @@ export const Imagen = styled.video`
     }
   }
 `;
+export const Imagen = styled.img`
+  width: ${(props) =>
+    props.isModal
+      ? "100%"
+      : "300px"}; /* Si está en el modal, ocupa todo el ancho */
+  height: ${(props) => (props.isModal ? "auto" : "200px")};
+  max-width: ${(props) =>
+    props.isModal ? "none" : "600px"}; /* Sin límite de tamaño en el modal */
+  max-height: ${(props) =>
+    props.isModal
+      ? "90vh"
+      : "400px"}; /* Ocupa hasta el 90% del alto de la pantalla en el modal */
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  :hover {
+    transform: scale(
+      ${(props) => (props.isModal ? "1" : "1.1")}
+    ); /* Sin zoom en el modal */
+    box-shadow: ${(props) =>
+      props.isModal
+        ? "none"
+        : "0 0rem 1rem 0.5rem white"}; /* Sin sombra en el modal */
+  }
+
+  @media (max-width: 1280px) {
+    max-width: 500px;
+    max-height: 300px;
+  }
+  @media (max-width: 768px) {
+    width: 100%; /* Toma el ancho del contenedor en pantallas pequeñas */
+    max-width: none;
+    max-height: none;
+    height: auto;
+  }
+  @media (max-width: 416px) {
+    width: 100%;
+    height: auto;
+    :hover {
+      transform: scale(1); /* Sin zoom en pantallas pequeñas */
+      box-shadow: none;
+    }
+  }
+  @media (max-width: 376px) {
+    width: 100%;
+    height: auto;
+    :hover {
+      transform: scale(1); /* Sin zoom en pantallas pequeñas */
+      box-shadow: none;
+    }
+  }
+`;
+
 export const Titulo = styled.h2`
   word-wrap: break-word;
   margin: 0.1em 0.2em;
@@ -148,11 +198,9 @@ export const Descripcion = styled.p`
   }
   @media (max-width: 416px) {
     height: 20%;
-    
   }
   @media (max-width: 376px) {
     width: 100%;
-
   }
 `;
 
@@ -173,4 +221,41 @@ export const LinkDeploy = styled(Link)`
     font-size: 1em;
     padding: 1em 0;
   }
+`;
+/* Estilos del Modal */
+export const ModalWrapper = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+`;
+
+export const ModalContent = styled.div`
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+`;
+
+export const CloseButton = styled.button`
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: black;
+  z-index: 100;
 `;
