@@ -36,7 +36,7 @@ const proyecto = [
     // formatoVideo: "video/mp4",
   },
   {
-    videoURL: "https://vimeo.com/778854630",
+    videoURL: "/assets/video/hostelVideo.mp4",
     titulo: "SPA Proyecto web hostel",
     descripcion:
       "SPA creada como proyecto grupal junto a 6 compañeros. Utilizando principalmente Html, Css, React, Redux, Bootstrap, Styled Components, nodeJS, express, postgreSQL ",

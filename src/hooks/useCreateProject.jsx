@@ -51,14 +51,14 @@ const useCreateProject = (proyectos) => {
                   />
                 ) : (
                   <Video
-                    src={proyecto.deploy}
+                    src={proyecto.videoURL}
                     controls
                     muted
                     loading="lazy"
                     type={proyecto.formatoVideo}
                     onClick={() =>
                       openModal(
-                        <Video src={proyecto.deploy} controls muted autoPlay />
+                        <Video src={proyecto.videoURL} controls muted autoPlay />
                       )
                     }
                   >
