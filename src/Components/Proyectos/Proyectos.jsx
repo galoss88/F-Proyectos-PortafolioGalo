@@ -31,7 +31,7 @@ const proyecto = [
   {
     // videoURL: "/assets/videoProyectos/PiHenry.mp4",
     titulo: "App react native gestion formularios.",
-    descripcion: "Aplicacion mobile para gestionar creacion de formularios.",
+    descripcion: "Aplicacion mobile para gestionar creacion de formularios. Creada solo con fines practicos.",
     deploy: "https://test-app-ifarming.netlify.app",
     // formatoVideo: "video/mp4",
   },
