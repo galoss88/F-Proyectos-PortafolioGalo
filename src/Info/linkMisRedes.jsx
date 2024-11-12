@@ -1,6 +1,6 @@
-import linkedin from "../../public/assets/Images/linkedin.svg";
-import github from "../../public/assets/Images/github.svg";
-import gmail from "../../public/assets/Images/gmail.svg";
+import linkedin from "/assets/Images/linkedin.svg";
+import github from "/assets/Images/github.svg";
+import gmail from "/assets/Images/gmail.svg";
 const redes = [
   {
     nameRed: "Gmail",
